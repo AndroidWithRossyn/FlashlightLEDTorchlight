@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        tools:context=".fragment.TorchFragment">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <CheckBox
+                        android:id="@+id/on_off_button"
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_centerHorizontal="true"
+                        android:button="@null"
+                        android:background="@drawable/off_torch" />
+
+                    <LinearLayout
+                        android:id="@+id/torch_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_below="@+id/on_off_button"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/next_button_light"
+                        android:orientation="vertical"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="20dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginVertical="5dp"
+                            android:layout_marginTop="5dp"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentStart="true"
+                                    android:fontFamily="@font/poppins_bold"
+                                    android:text="On Time"
+                                    android:textColor="@color/white"
+                                    android:textSize="16dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:fontFamily="@font/poppins"
+                                    android:textColor="#B3FFFFFF"
+                                    android:textSize="16dp" />
+                            </RelativeLayout>
+
+
+                            <SeekBar
+                                android:id="@+id/volume_seekbar_on_time"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_marginVertical="5dp"
+                                android:progressBackgroundTint="@color/white"
+                                android:progressTint="@color/main_blue"
+                                android:thumbTint="@color/white" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentStart="true"
+                                    android:fontFamily="@font/poppins_bold"
+                                    android:text="Off Time"
+                                    android:textColor="@color/white"
+                                    android:textSize="16dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:fontFamily="@font/poppins"
+                                    android:textColor="#B3FFFFFF"
+                                    android:textSize="16dp" />
+                            </RelativeLayout>
+
+
+                            <SeekBar
+                                android:id="@+id/volume_seekbar_off_time"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_marginVertical="5dp"
+                                android:progressBackgroundTint="@color/white"
+                                android:progressTint="@color/main_blue"
+                                android:thumbTint="@color/white" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/volume_status"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/torch_time"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="50dp"
+                        android:background="@drawable/next_button_light"
+                        android:orientation="vertical"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="20dp">
+
+
+                        <LinearLayout
+                            android:id="@+id/normal_status"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/sound" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:fontFamily="@font/poppins_bold"
+                                android:paddingHorizontal="20dp"
+                                android:layout_weight="1"
+                                android:text="Normal"
+                                android:textColor="@color/white"
+                                android:textSize="16dp" />
+
+                            <CheckBox
+                                android:id="@+id/normal_switch"
+                                android:layout_width="50dp"
+                                android:layout_height="30dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@drawable/switch_off"
+                                android:button="@null"
+                                android:gravity="center" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/vibrate_status"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/vibrate" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:fontFamily="@font/poppins_bold"
+                                android:paddingHorizontal="20dp"
+                                android:layout_weight="1"
+                                android:text="Vibrate"
+                                android:textColor="@color/white"
+                                android:textSize="16dp" />
+
+                            <CheckBox
+                                android:id="@+id/vibrate_switch"
+                                android:layout_width="50dp"
+                                android:layout_height="30dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@drawable/switch_off"
+                                android:button="@null"
+                                android:gravity="center" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/silent_status"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginTop="10dp"
+                            android:visibility="gone"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/silent" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:fontFamily="@font/poppins_bold"
+                                android:paddingHorizontal="20dp"
+                                android:layout_weight="1"
+                                android:text="Silent"
+                                android:textColor="@color/white"
+                                android:textSize="16dp" />
+
+                            <CheckBox
+                                android:id="@+id/silent_switch"
+                                android:layout_width="50dp"
+                                android:layout_height="30dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@drawable/switch_off"
+                                android:button="@null"
+                                android:gravity="center" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </androidx.core.widget.NestedScrollView>
+            <LinearLayout
+                android:id="@+id/small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true">
+
+                <include layout="@layout/small_native_container" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+
+
+
+    </FrameLayout>
+</layout>

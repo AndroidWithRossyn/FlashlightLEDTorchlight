@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.TermsConditionsActivity"
+    android:paddingTop="8dp"
+    android:paddingHorizontal="10dp"
+    android:orientation="vertical"
+    android:background="@drawable/home_page">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="@string/terms_conditions"
+        android:textAppearance="@style/TextAppearance.MyApp.Headline5"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:fontFamily="@font/poppins"
+            android:layout_marginBottom="20dp"
+            android:text="@string/terms_conditions"
+            android:justificationMode="inter_word"
+            android:textAppearance="@style/TextAppearance.MyApp.Body2"
+            android:textColor="@color/white"
+            tools:targetApi="o" />
+
+    </ScrollView>
+</LinearLayout>

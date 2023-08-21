@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Flashlight LED Torch light</string>
+    <string name="first_onboard">Enjoy the bright torch and flash light with various modes and features right at your finger tips.</string>
+    <string name="second_onboard">" Experience the fun of multiple colour flash light that'll transform any space into a colourful dance floor. Get started now!"</string>
+    <string name="you_can_find_out_more_information_by_clicking_on_the_following_link">You can find out more information by clicking on the following link :</string>
+    <string name="we_do_not_share_any_kind_of_your_personal_data_with_third_parties">We do not share any kind of your Personal Data with third parties.</string>
+    <string name="privacy_policy_may_be_updated_from_time_to_time_for_any_reason_we_will_notify_you_of_any_changes_to_our_privacy_policy_by_posting_the_new_privacy_policy_here">Privacy Policy may be updated from time to time for any reason. We will notify you of any changes to our Privacy Policy by posting the new Privacy Policy here.</string>
+    <string name="any_type_of_modification_to_the_app_or_its_components_is_not_allowed">Any type of modification to the app or its components is not allowed.</string>
+    <string name="if_we_find_the_app_is_being_used_outside_its_terms_of_use_we_may_restrict_access_to_it">If we find the app is being used outside its terms of use, we may restrict access to it.</string>
+    <string name="by_pressing_the_accept_button_i_declare_i_have_read_and_accepted_the_following_condition_of_use">By pressing the Accept button, I declare I have read and accepted the following condition of use.</string>
+    <string name="android_apps_is_warning_you_about_the_app_that_gives_you_many_services_and_important_information_for_safer_and_efficient_use">The application is notifying you to the presence of an app that provides several services that are essential information for safer and more efficient use.</string>
+    <string name="terms_conditions"><u>Terms &amp; Conditions</u></string>
+    <string name="privacy_policy_tv"><u>Privacy Policy</u></string>
+    <string name="terms_of_use_cap">Terms of Use</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="guide1">How to remove this application from the restricted list of power saving features on the phone?</string>
+    <string name="guide2">Why this app not flashing or not flashing sometimes?</string>
+    <string name="guide3">How to avoid accidentally closing this app?</string>
+    <string name="guide4">What permissions does this app require?</string>
+    <string name="second_question">1. This application was accidentally
+        \n2. On some phones, the phone\'s battery optimizer did not allow the app to run in the background, causing this app to stop working.
+        \n3. When the phone indicators low battery level and you activate the power saving feature, this application may stop working.
+        \n4. When you shutdown and restart your phone, on some devices this app may not be able to restart itself.
+        \n5. In any case, when this application is closed and not working, you just need to reopen this application.</string>
+    <string name="third_question">Locking this app on the multitasking manager can make this app work better, keep it active all the time, avoid this app being closed accidentally (disabled and inoperable).</string>
+    <string name="fourth_question">Call management: Enable this permission, when you having incoming calls, we can flash to notify you Notifications: Enable this permission so that we can notify battery status Background running: Enable this permission to keep the flash of incoming call and battery detection working stably Notification Access: Enable this permission so that we can flash when you receive messages from other applications Display Permission: Enable this permission so that we can show notifications appear on the top of screen Camera Access: Enable this permission so that flashlight can work normally.</string>
+    <string name="turn_incoming">Turn On For Incoming Calls</string>
+    <string name="turn_sms">Turn On For SMS</string>
+    <string name="turn_notification"><![CDATA[Turn On Notifications]]></string>
+    <string name="on">On</string>
+    <string name="off">Off</string>
+    <string name="cannot_access_camera">Cannot access camera, is it being used by another app?</string>
+    <string name="no_camera">No camera</string>
+    <string name="milliseconds_format">%d milliseconds\n</string>
+
+</resources>
